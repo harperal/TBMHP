@@ -253,52 +253,62 @@ a:hover {
 
 /* About Us Page */
 
-.aboutus-container {
-    background-image: url('https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/Thomas_working_line.png?v=1689030358092');
+#container-us {
+    margin: 0 auto;
+    width: 100%;
+    height: 1200px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: .5fr 2fr 1fr;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+    gap: 8px;
+  }
+  
+  .header-us {
+    display: flex;
+    grid-area: header;
+    background-color: rgb(29, 95, 39);
+    color: antiquewhite;
+    font-size: 3em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-us {
+    grid-area: main;
+    background: url('https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/Thomas_working_line.png?v=1689030358092');
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 700px;
     min-height: 500px;
-    position: relative;
-    color: rgb(205, 187, 165);
-    background-color: rgba(0, 0, 0, 0.6); 
     padding: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.aboutus-txt h5{
+    color: antiquewhite;
+    font-family: helvetica;
+    font-size: 24px;
+    background-color: rgb(142, 130, 114);
     text-align: left;
-    max-width: 800px;
+  }
+  
+  .footer-us {
+    grid-area: footer;
+    color: antiquewhite;
+    background-color: rgb(142, 130, 114);
+    outline:#fff 1rem;
+  }
+
+  #text-us {
     width: 80%;
-    background-color:teal;
-    opacity: .7;
-    color: white;
-    margin-top: 5%;
-    margin-bottom: 20px;
-    font-size: 22px;
-    margin: 0;
-}
+    background-color: rgb(142, 130, 114);
+    opacity: .8;
+    padding: 20px;
+    font-size: 20px
+  }
 
-#aboutus {
-    padding: 20px 20px;
-    text-align:left;
-}
-
-@media screen and (max-width: 768px) {
-    .aboutus-txt {
-        font-size: 12px;
-        width: 100%; 
-        padding: 20px 10px; 
-    }
-
-    .aboutus-container {
-        min-height: 300px; 
-    }
-}
 
 
 /* About Tom Page */
@@ -322,7 +332,7 @@ a:hover {
     display: flex;
     grid-area: header;
     background-color: rgb(29, 95, 39);
-    color: white;
+    color: antiquewhite;
     font-size: 3em;
     text-align: center;
     justify-content: center;
@@ -330,7 +340,7 @@ a:hover {
   }
   .main {
     grid-area: main;
-    padding: 40px;
+    padding: 20px;
     color: antiquewhite;
     font-family: helvetica;
     font-size: 24px;
@@ -340,8 +350,8 @@ a:hover {
   
   .aside {
     grid-area: aside;
-    width: 100%; /* Add this to define the width of the container */
-    height: 100%; /* Add this to define the height of the container */
+    width: 100%; 
+    height: 100%; 
     background: url("https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/tom_daughter_cuddle.jpg?v=1689031424965") center/cover no-repeat;
     background-color: rgb(142, 130, 114);
   }
