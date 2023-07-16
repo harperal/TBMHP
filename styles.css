@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-    background: #fff;
+    background: rgb(142, 130, 114);
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     padding: 5px 20px;
 }
@@ -21,7 +21,7 @@ ul {
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 10px;
 }
@@ -32,7 +32,7 @@ a:hover {
 }
 
 .menu li {
-    font-size: 16px;
+    font-size: 20px;
     padding: 15px 5px;   
 }
 
@@ -106,7 +106,7 @@ a:hover {
 }
 
 /* Tablet Menu */
-@media all and (min-width: 468px){
+@media all and (min-width: 300px){
     .menu{
         justify-content: center;
     }
@@ -271,7 +271,7 @@ a:hover {
   .header-us {
     display: flex;
     grid-area: header;
-    background-color: rgb(29, 95, 39);
+    background-color: rgb(142, 130, 114);
     color: antiquewhite;
     font-size: 3em;
     text-align: center;
@@ -309,8 +309,6 @@ a:hover {
     font-size: 20px
   }
 
-
-
 /* About Tom Page */
 
   #container {
@@ -325,13 +323,13 @@ a:hover {
       "header header"
       "main aside"
       "footer footer";
-    gap: 8px;
+    gap: 10px;
   }
   
   .header {
     display: flex;
     grid-area: header;
-    background-color: rgb(29, 95, 39);
+    background-color: rgb(142, 130, 114);
     color: antiquewhite;
     font-size: 3em;
     text-align: center;
@@ -367,9 +365,9 @@ a:hover {
 /* Board of Directors */
   
   .board-container {
-      display: flex;
-      flex-direction: column; 
-      align-items: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
   }
     
   .board-member {
