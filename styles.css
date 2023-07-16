@@ -253,43 +253,56 @@ a:hover {
 
 /* About Us Page */
   
-  .aboutus-container {
-      background-image: url('https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/Thomas_working_line.png?v=1689030358092');
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: 700px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      text-align: left;
-      color: rgb(205, 187, 165);
-      background-color: rgba(0, 0, 0, 0.6); 
-      padding: 20px;
-  }
-  
-  .aboutus-txt h3 {
-      background-color:rgb(205, 187, 165);
-      color: antiquewhite;
-      font-size: 32px;
-      margin: 0;
-    }
-    
-  .aboutus-txt h5 {
-      background-color:rgb(142, 130, 114);
-      opacity: .6;
-      color: whitesmoke;
-      font-size: 22px;
-      margin: 0;
-      margin-top: 5%;
-      margin-bottom: 20px;
-  }
+/* Add the following CSS to your styles.css file */
 
-  #aboutus {
+
+.aboutus-container {
+    background-image: url('https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/Thomas_working_line.png?v=1689030358092');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    min-height: 500px;
+    position: relative;
+    color: rgb(205, 187, 165);
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aboutus-txt h5{
+    text-align: left;
+    max-width: 800px;
+    width: 80%;
+    background-color:teal;
+    opacity: .7;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    font-size: 22px;
+    margin: 0;
+}
+
+#aboutus {
     padding: 20px 20px;
     text-align:left;
-  }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutus-txt {
+        font-size: 12px;
+        width: 100%; /* Adjust the width to fill the entire container on smaller screens */
+        padding: 20px 10px; /* Add padding to the text container on smaller screens */
+    }
+
+    .aboutus-container {
+        min-height: 300px; /* Reduce the minimum height for smaller screens */
+    }
+}
+
 
 /* About Tom Page */
 
