@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: #bbb;
+    background-color:rgb(142, 130, 114);
 }
 
 nav {
@@ -250,6 +250,8 @@ a:hover {
     top: 110%;
     transform: translate(-50%, -50%);
   }
+
+/* About Us Page */
   
   .aboutus-container {
       background-image: url('https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/Thomas_working_line.png?v=1689030358092');
@@ -262,50 +264,38 @@ a:hover {
       align-items: flex-start;
       justify-content: flex-start;
       text-align: left;
-      color: #ffffff;
+      color: rgb(205, 187, 165);
       background-color: rgba(0, 0, 0, 0.6); 
       padding: 20px;
   }
   
-  .aboutus-txt {
-      background-color:antiquewhite;
-      width: 50%;
-      margin-left: 40px;
-      margin-top: 40px;
-      padding: 20px;
-  }
-  
   .aboutus-txt h3 {
-      background-color:antiquewhite;
-      color: black;
+      background-color:rgb(205, 187, 165);
+      color: antiquewhite;
       font-size: 32px;
       margin: 0;
     }
     
   .aboutus-txt h5 {
-      background-color:antiquewhite;
-      color: black;
-      font-size: 18px;
+      background-color:rgb(142, 130, 114);
+      opacity: .6;
+      color: whitesmoke;
+      font-size: 22px;
       margin: 0;
+      margin-top: 5%;
       margin-bottom: 20px;
   }
-  
-  
-  .title-page {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      text-align: left;
-      width: 80%;
-      margin: 0 auto;
+
+  #aboutus {
+    padding: 20px 20px;
+    text-align:left;
   }
-  .title-description {
-      width: 60%;
-      margin: 0 auto;
-      font-family: Helvetica;
-      text-align: center;
-      font-size: 18pt;
-  }
+
+/* About Tom Page */
+
+
+  
+/* Board of Directors */
   
   .board-container {
       display: flex;
@@ -317,7 +307,7 @@ a:hover {
       width: 70%;
       margin: 20px;
       padding: 20px;
-      border: 1px solid #ccc;
+      border: 1px solid rgb(69, 34, 34);
       display: flex;
       align-items: center;
   }
@@ -339,13 +329,14 @@ a:hover {
     
   .board-member h3 {
       font-size: 24px;
+      color: whitesmoke;
       margin-bottom: 10px;
       margin: auto;
       text-align: left;
   }
     
   .board-member p {
-      color:antiquewhite;
+      color: whitesmoke;
       font-size: 20px;
       margin-left: 20px;
   }
