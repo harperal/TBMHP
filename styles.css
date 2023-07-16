@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #bbb;
+}
+
+nav {
+    background: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    padding: 5px 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    scale: 1.05;
+    background-color: #ccc;
+}
+
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;   
+}
+
+.menu li a{
+    display: block;
+}
+
+.logo a{
+    font-size: 20px;
+}
+
+.button.secondary{
+    border-bottom: 1px #444 solid;
+}
+
+.button a {
+    color: white;
+}
+
+
+/* Mobile Menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle{
+    order: 1;
+}
+.item.button{
+    order: 2;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active{
+    display: block;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before, .bars::after{
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+.bars::before{
+    top: 5px;
+}
+.bars::after{
+    top: -5px;
+}
+
+/* Tablet Menu */
+@media all and (min-width: 468px){
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex: 1;
+    }
+    .item.button{
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        order: 2;
+    }
+    .button.secondary{
+        border: 0;
+    }
+    .button a{
+        text-decoration: none;
+        padding: 7px 15px;
+        background: teal;
+        border: 1px solid #006d6d;
+        border-radius: 50em;
+    }
+}
+
+/* Desktop menu */
+@media all and (min-width: 768px) {
+    .item{
+        display: block;
+        width: auto;       
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .button {
+        order: 2;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }
+    .menu li.button{
+        padding-right: 0;
+    }
+}
+
+/* Image and text container for homepage */
+.container {
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    color: white;
+  }
+  /* text on homepage over image */
+  .image-text h1{
+    position: absolute;
+    font-family: Helvetica;
+    font-size: 77px;
+    color: white;
+    opacity: 1;
+    z-index: 1;
+    text-align: center;
+    top: 30%;
+    font-weight: 400;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image-text h2{
+    position: absolute;
+    font-family: Helvetica;
+    font-size: 66px;
+    opacity: 1;
+    z-index: 1;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image-text h3{
+    position: absolute;
+    font-family: Helvetica;
+    font-size: 40px;
+    opacity: 1;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image-text h4{
+    position: absolute;
+    font-family: Helvetica;
+    font-size: 30px;
+    opacity: 1;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    padding: 0;
+    top: 77%;
+    line-height: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h5{
+    position: absolute;
+    font-family: Helvetica;
+    font-size: 30px;
+    opacity: 1;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    padding: 0;
+    line-height: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h6{
+    position: absolute;
+    font-family: Helvetica;
+    font-size: 24px;
+    opacity: 1;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    padding: 0;
+    line-height: 1;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .aboutus-container {
+      background-image: url('https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/Thomas_working_line.png?v=1689030358092');
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.6); 
+      padding: 20px;
+  }
+  
+  .aboutus-txt {
+      background-color:antiquewhite;
+      width: 50%;
+      margin-left: 40px;
+      margin-top: 40px;
+      padding: 20px;
+  }
+  
+  .aboutus-txt h3 {
+      background-color:antiquewhite;
+      color: black;
+      font-size: 32px;
+      margin: 0;
+    }
+    
+  .aboutus-txt h5 {
+      background-color:antiquewhite;
+      color: black;
+      font-size: 18px;
+      margin: 0;
+      margin-bottom: 20px;
+  }
+  
+  
+  .title-page {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+      width: 80%;
+      margin: 0 auto;
+  }
+  .title-description {
+      width: 60%;
+      margin: 0 auto;
+      font-family: Helvetica;
+      text-align: center;
+      font-size: 18pt;
+  }
+  
+  .board-container {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+  }
+    
+  .board-member {
+      width: 70%;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+  }
+    
+  .board-member img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-right: 20px;
+      object-fit: cover;
+  }
+  
+  .member-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+  }
+    
+  .board-member h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      margin: auto;
+      text-align: left;
+  }
+    
+  .board-member p {
+      color:antiquewhite;
+      font-size: 20px;
+      margin-left: 20px;
+  }
+  
+  
