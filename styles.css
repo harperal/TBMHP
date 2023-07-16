@@ -127,8 +127,8 @@ a:hover {
     .button a{
         text-decoration: none;
         padding: 7px 15px;
-        background: teal;
-        border: 1px solid #006d6d;
+        background: rgb(29, 95, 39);
+        border: 1px solid #092f06;
         border-radius: 50em;
     }
 }
@@ -303,6 +303,55 @@ a:hover {
 
 /* About Tom Page */
 
+  #container {
+    margin: 0 auto;
+    width: 90%;
+    height: 1200px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: .5fr 2fr 1fr;
+    grid-template-areas:
+      "header header"
+      "main aside"
+      "footer footer";
+    gap: 8px;
+  }
+  
+  .header {
+    display: flex;
+    grid-area: header;
+    background-color: rgb(29, 95, 39);
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .main {
+    grid-area: main;
+    padding: 40px;
+    color: antiquewhite;
+    font-family: helvetica;
+    font-size: 24px;
+    background-color: rgb(117, 105, 84);
+    text-align: left;
+  }
+  
+  .aside {
+    grid-area: aside;
+    width: 100%; /* Add this to define the width of the container */
+    height: 100%; /* Add this to define the height of the container */
+    background: url("https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/tom_daughter_cuddle.jpg?v=1689031424965") center/cover no-repeat;
+    background-color: rgb(117, 105, 84);
+  }
+  
+  
+  .footer {
+    grid-area: footer;
+    color: antiquewhite;
+    background-color: rgb(117, 105, 84);
+  }
 
   
 /* Board of Directors */
