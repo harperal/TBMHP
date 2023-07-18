@@ -7,11 +7,11 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color:rgb(142, 130, 114);
+    background-color:#F0EDE5 ;
 }
 
 nav {
-    background: rgb(142, 130, 114);
+    background: #4F7942 ;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     padding: 5px 20px;
 }
@@ -24,11 +24,12 @@ a {
     color: white;
     text-decoration: none;
     padding: 10px;
+    border-radius: 50em;
 }
 
 a:hover {
     scale: 1.05;
-    background-color: #ccc;
+    background-color: #9E9478;
 }
 
 .menu li {
@@ -83,7 +84,7 @@ a:hover {
 }
 
 .bars {
-    background: #999;
+    background: #999 ;
     display: inline-block;
     height: 2px;
     position: relative;
@@ -127,8 +128,8 @@ a:hover {
     .button a{
         text-decoration: none;
         padding: 7px 15px;
-        background: rgb(29, 95, 39);
-        border: 1px solid #092f06;
+        background: #9E9478;
+        border: 1px solid #4F7942 ;
         border-radius: 50em;
     }
 }
@@ -271,8 +272,8 @@ a:hover {
   .header-us {
     display: flex;
     grid-area: header;
-    background-color: rgb(142, 130, 114);
-    color: antiquewhite;
+    background-color: #F0EDE5;
+    color: #004225;
     font-size: 3em;
     text-align: center;
     justify-content: center;
@@ -287,23 +288,23 @@ a:hover {
     height: 700px;
     min-height: 500px;
     padding: 20px;
-    color: antiquewhite;
+    color: #F0EDE5;
     font-family: helvetica;
     font-size: 24px;
-    background-color: rgb(142, 130, 114);
+    background-color: #F0EDE5;
     text-align: left;
   }
   
   .footer-us {
     grid-area: footer;
     color: antiquewhite;
-    background-color: rgb(142, 130, 114);
+    background-color: #F0EDE5;
     outline:#fff 1rem;
   }
 
   #text-us {
     width: 80%;
-    background-color: rgb(142, 130, 114);
+    background-color: #4F7942 ;
     opacity: .8;
     padding: 20px;
     font-size: 20px
@@ -329,8 +330,8 @@ a:hover {
   .header {
     display: flex;
     grid-area: header;
-    background-color: rgb(142, 130, 114);
-    color: antiquewhite;
+    background-color: #F0EDE5 ;
+    color: #004225;
     font-size: 3em;
     text-align: center;
     justify-content: center;
@@ -339,10 +340,10 @@ a:hover {
   .main {
     grid-area: main;
     padding: 20px;
-    color: antiquewhite;
+    color: #004225;
     font-family: helvetica;
     font-size: 24px;
-    background-color: rgb(142, 130, 114);
+    background-color: #F0EDE5 ;
     text-align: left;
   }
   
@@ -351,14 +352,14 @@ a:hover {
     width: 100%; 
     height: 100%; 
     background: url("https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/tom_daughter_cuddle.jpg?v=1689031424965") center/cover no-repeat;
-    background-color: rgb(142, 130, 114);
+    background-color: #F0EDE5 ;
   }
   
   
   .footer {
     grid-area: footer;
-    color: antiquewhite;
-    background-color: rgb(142, 130, 114);
+    color: black;
+    background-color: #F0EDE5 ;
   }
 
   
@@ -402,7 +403,7 @@ a:hover {
       width: 70%;
       margin: 20px;
       padding: 20px;
-      border: 1px solid white;
+      border: 1px solid #4F7942 ;
       display: flex;
       align-items: center;
   }
@@ -424,14 +425,14 @@ a:hover {
     
   .board-member h3 {
     font-size: 24px;
-    color: whitesmoke;
+    color: #004225;
     margin-bottom: 10px;
     margin: auto;
     text-align: left;
   }
     
   .board-member p {
-      color: whitesmoke;
+      color: #004225;
       font-size: 20px;
       margin-left: 20px;
   }
