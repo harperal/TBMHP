@@ -1,503 +1,512 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.banner{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5) 90%,rgba(255, 255, 255, 1) 100%), url(https://cdn.glitch.global/ef4b1ae0-549c-4c65-a17b-00627de05476/banner.jpeg?v=1689031159671) ;
+background-size: cover;
+
+background-position: center;
+}
+.logo{
+width: 100px;
+height: 100px;
+cursor: pointer;
+
+}
+.navbar{
+width: 85%;
+margin: auto;
+padding: 35px 0;
+display: flex;
+align-items: center;
+justify-content: space-between; 
+}
+.navbar ul li{
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+}
+.navbar ul li a{
+text-decoration: none;
+color: #fff;
+font-weight: 400;
+text-transform: uppercase;
+}
+.navbar ul li::after{
+content: "";
+height: 3px;
+width: 0%;
+background: #009688;
+position: absolute;
+left: 0;
+bottom: -10px;
+transition: 0.5s;
+}
+.navbar ul li:hover::after{
+width: 100%;
+}
+.content{
+width: 100%;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+text-align: center;
+color: #fff;
+}
+.content h1{
+font-size: 80px;
+margin-top: 80px;
+font-weight: 450;
+color: #fff;
+margin-bottom: 2px;
+}
+.content h2{
+font-size: 50px;
+margin-top: 60px;
+font-weight: 400;
+color: #D5F5E3    ;
+padding: 0px;
+margin-top:2px;
+}
+button {
+width: 220px;
+  padding: 18px 0;
+  text-align: center;
+font-size: 22px;
+margin: 20px 10px;
+border-radius: 30px;
+font-weight: medium;
+border: 2px solid #3498DB;
+background: transparent;
+color: #fff;
+cursor: pointer; 
+position: relative;
+overflow: hidden;
+}
+span{
+background: #3498DB;
+height: 100%;
+width: 0%;
+border-radius: 25px;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: -1;
+transition: .5s;
+}
+button:hover span{
+width: 100%;
+}
+button:hover{
+border: none;
 }
 
-body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color:#F0EDE5 ;
+.path{
+width: 100%;
+position: absolute;
+text-align: center;
+color: #154360 ;
+margin-bottom: 20px;
 }
-
-nav {
-    background: #4F7942 ;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    padding: 5px 20px;
+.path h3{
+font-size: 50px;
+margin-top: 60px;
+font-weight: 400;
+color: #154360  ;
+padding: 0px;
+margin-bottom:10px;
 }
-
-ul {
-    list-style-type: none;
+.path h4{
+font-size: 20px;
+margin-top: 70px;
+font-weight: 400;
+color: #154360  ;
+padding: 0px;
+margin-top:2px;
+margin-bottom: 40px;
 }
-
-a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 50em;
+.mission{
+width: 100%;
+margin-top: 90px;
+position: absolute;
+text-align: center;
+color: #154360 ;
 }
-
-a:hover {
-    scale: 1.05;
-    background-color: #9E9478;
+.mission h5{
+font-size: 40px;
+margin-top: 90px;
+font-weight: 400;
+color: #154360  ;
+padding: 0px;
+margin-bottom: 5px;
 }
-
-.menu li {
-    font-size: 20px;
-    padding: 15px 5px;   
+.mission h6{
+font-size: 20px;
+margin-top: 10px;
+font-weight: 350;
+color: #154360  ;
+padding-left: 60px;
+padding-right: 60px;
+text-align: center;
+padding-bottom: 100px;
 }
-
-.menu li a{
-    display: block;
-}
-
-.logo a{
-    font-size: 20px;
-}
-
-.button.secondary{
-    border-bottom: 1px #444 solid;
-}
-
-.button a {
-    color: white;
-}
-
 
 /* Mobile Menu */
 .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .toggle{
-    order: 1;
+  order: 1;
 }
 .item.button{
-    order: 2;
+  order: 2;
 }
 
 .item {
-    width: 100%;
-    text-align: center;
-    order: 3;
-    display: none;
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
 }
 
 .item.active{
-    display: block;
+  display: block;
 }
 
 .toggle {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .bars {
-    background: #999 ;
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    width: 18px;
+  background: #999 ;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 18px;
 }
 
 .bars::before, .bars::after{
-    background: #999;
-    content: "";
-    display: inline-block;
-    height: 2px;
-    position: absolute;
-    width: 18px;
+  background: #999;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  width: 18px;
 }
 .bars::before{
-    top: 5px;
+  top: 5px;
 }
 .bars::after{
-    top: -5px;
+  top: -5px;
 }
 
 /* Tablet Menu */
 @media all and (min-width: 300px){
-    .menu{
-        justify-content: center;
-    }
-    .logo{
-        flex: 1;
-    }
-    .item.button{
-        width: auto;
-        order: 1;
-        display: block;
-    }
-    .toggle {
-        order: 2;
-    }
-    .button.secondary{
-        border: 0;
-    }
-    .button a{
-        text-decoration: none;
-        padding: 7px 15px;
-        background: #9E9478;
-        border: 1px solid #4F7942 ;
-        border-radius: 50em;
-    }
+  .menu{
+      justify-content: center;
+  }
+
+  .item.button{
+      width: auto;
+      order: 1;
+      display: block;
+  }
+  .toggle {
+      order: 2;
+  }
+  .button.secondary{
+      border: 0;
+  }
 }
+
 
 /* Desktop menu */
 @media all and (min-width: 768px) {
-    .item{
-        display: block;
-        width: auto;       
-    }
-    .toggle{
-        display: none;
-    }
-    .logo{
-        order: 0;
-    }
-    .item{
-        order: 1;
-    }
-    .button {
-        order: 2;
-    }
-    .menu li{
-        padding: 15px 10px;
-    }
-    .menu li.button{
-        padding-right: 0;
-    }
+  .item{
+      display: block;
+      width: auto;       
+  }
+  .toggle{
+      display: none;
+  }
+
+  .item{
+      order: 1;
+  }
+
+  .menu li{
+      padding: 15px 10px;
+  }
+  .menu li.button{
+      padding-right: 0;
+  }
 }
 
-/* Image and text container for homepage */
-.container {
-    position: relative;
-    text-align: center;
-    z-index: 0;
-    color: white;
-  }
-  /* text on homepage over image */
-  .image-text h1{
-    position: absolute;
-    font-family: Helvetica;
-    font-size: 77px;
-    color: white;
-    opacity: 1;
-    z-index: 1;
-    text-align: center;
-    top: 30%;
-    font-weight: 400;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .image-text h2{
-    position: absolute;
-    font-family: Helvetica;
-    font-size: 66px;
-    opacity: 1;
-    z-index: 1;
-    color: white;
-    font-weight: 300;
-    text-align: center;
-    top: 42%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .image-text h3{
-    position: absolute;
-    font-family: Helvetica;
-    font-size: 40px;
-    opacity: 1;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    font-weight: 400;
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .image-text h4{
-    position: absolute;
-    font-family: Helvetica;
-    font-size: 30px;
-    opacity: 1;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    font-weight: 300;
-    padding: 0;
-    top: 77%;
-    line-height: 1;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  h5{
-    position: absolute;
-    font-family: Helvetica;
-    font-size: 30px;
-    opacity: 1;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    font-weight: 300;
-    padding: 0;
-    line-height: 1;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  h6{
-    position: absolute;
-    font-family: Helvetica;
-    font-size: 24px;
-    opacity: 1;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    font-weight: 300;
-    padding: 0;
-    line-height: 1;
-    left: 50%;
-    top: 110%;
-    transform: translate(-50%, -50%);
-  }
+
+
 
 /* About Us Page */
 
 #container-us {
-    margin: 0 auto;
-    width: 100%;
-    height: 1200px;
-    padding: 40px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: .5fr 2fr 1fr;
-    grid-template-areas:
-      "header header"
-      "main main"
-      "footer footer";
-    gap: 8px;
-  }
-  
-  .header-us {
-    display: flex;
-    grid-area: header;
-    background-color: #F0EDE5;
-    color: #004225;
-    font-size: 3em;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .main-us {
-    grid-area: main;
-    background: url('https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/Thomas_working_line.png?v=1689030358092');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 700px;
-    min-height: 500px;
-    padding: 20px;
-    color: #F0EDE5;
-    font-family: helvetica;
-    font-size: 24px;
-    background-color: #F0EDE5;
-    text-align: left;
-  }
-  
-  .footer-us {
-    grid-area: footer;
-    color: antiquewhite;
-    background-color: #F0EDE5;
-    outline:#fff 1rem;
-  }
+  margin: 0 auto;
+  width: 100%;
+  height: 1200px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: .5fr 2fr 1fr;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  gap: 8px;
+}
 
-  #text-us {
-    width: 80%;
-    background-color: #4F7942 ;
-    opacity: .8;
-    padding: 20px;
-    font-size: 20px
-  }
+.header-us {
+  display: flex;
+  grid-area: header;
+  background-color: #F0EDE5;
+  color: #004225;
+  font-size: 3em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.main-us {
+  grid-area: main;
+  background: url('https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/Thomas_working_line.png?v=1689030358092');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+  min-height: 500px;
+  padding: 20px;
+  color: #F0EDE5;
+  font-family: helvetica;
+  font-size: 24px;
+  background-color: #F0EDE5;
+  text-align: left;
+}
+
+.footer-us {
+  grid-area: footer;
+  color: antiquewhite;
+  background-color: #F0EDE5;
+  outline:#fff 1rem;
+}
+
+#text-us {
+  width: 80%;
+  background-color: #4F7942 ;
+  opacity: .8;
+  padding: 20px;
+  font-size: 20px
+}
 
 /* About Tom Page */
 
-  #container {
-    margin: 0 auto;
-    width: 100%;
-    height: 1200px;
-    padding: 40px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: .5fr 2fr 1fr;
-    grid-template-areas:
-      "header header"
-      "main aside"
-      "footer footer";
-    gap: 10px;
-  }
-  
-  .header {
-    display: flex;
-    grid-area: header;
-    background-color: #F0EDE5 ;
-    color: #004225;
-    font-size: 3em;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .main {
-    grid-area: main;
-    padding: 20px;
-    color: #004225;
-    font-family: helvetica;
-    font-size: 24px;
-    background-color: #F0EDE5 ;
-    text-align: left;
-  }
-  
-  .aside {
-    grid-area: aside;
-    width: 100%; 
-    height: 100%; 
-    background: url("https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/tom_daughter_cuddle.jpg?v=1689031424965") center/cover no-repeat;
-    background-color: #F0EDE5 ;
-  }
-  
-  
-  .footer {
-    grid-area: footer;
-    color: black;
-    background-color: #F0EDE5 ;
-  }
+#container {
+  margin: 0 auto;
+  width: 100%;
+  height: 1200px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: .5fr 2fr 1fr;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  gap: 10px;
+}
 
-  
-/* Board of Directors */
-  
-  
-.directors-container {
+.header {
   display: flex;
-  flex-direction: column;
+  grid-area: header;
+  background-color: #F0EDE5 ;
+  color: #004225;
+  font-size: 3em;
+  text-align: center;
+  justify-content: center;
   align-items: center;
+}
+.main {
+  grid-area: main;
   padding: 20px;
+  color: #004225;
+  font-family: helvetica;
+  font-size: 24px;
+  background-color: #F0EDE5 ;
+  text-align: left;
 }
-  
-  .board-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-gap: 20px;
-    position: relative;
-  }
 
-  .mission-container {
+.aside {
+  grid-area: aside;
+  width: 100%; 
+  height: 100%; 
+  background: url("https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/tom_daughter_cuddle.jpg?v=1689031424965") center/cover no-repeat;
+  background-color: #F0EDE5 ;
+}
+
+
+.footer {
+  grid-area: footer;
+  color: black;
+  background-color: #F0EDE5 ;
+}
+
+
+/* Board of Directors */
+
+
+.directors-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+}
+
+.board-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-gap: 20px;
+  position: relative;
+}
+
+.mission-container {
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin-top: 80px;
+}
+
+.board-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.board-member {
+    width: 70%;
+    margin: 20px;
     padding: 20px;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    margin-top: 80px;
+    border: 1px solid #4F7942 ;
+    display: flex;
+    align-items: center;
+}
+  
+.board-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
 }
 
-  .board-members {
+.member-info {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 200px;
+    align-items: flex-start;
+}
+  
+.board-member h3 {
+  font-size: 24px;
+  color: #004225;
+  margin-bottom: 10px;
+  margin: auto;
+  text-align: left;
+}
+  
+.board-member p {
+    color: #004225;
+    font-size: 20px;
+    margin-left: 20px;
+}
+  /* Registration Form Page */
+
+.registration-background {
+  width: 100%;
+  height: 100%;
+  
+  background-image: linear-gradient(to bottom, rgba(250, 246, 246, 0.835) 90%,rgba(246, 244, 244, 1) 100%), url(https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/DM6TC0-scaled.jpg?v=1689217084220) ;
+  background-size: cover;
+  
+  background-position: center;
+}
+.form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
-  .board-member {
-      width: 70%;
-      margin: 20px;
-      padding: 20px;
-      border: 1px solid #4F7942 ;
-      display: flex;
-      align-items: center;
-  }
-    
-  .board-member img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      margin-right: 20px;
-      object-fit: cover;
-  }
-  
-  .member-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-  }
-    
-  .board-member h3 {
-    font-size: 24px;
-    color: #004225;
-    margin-bottom: 10px;
-    margin: auto;
-    text-align: left;
-  }
-    
-  .board-member p {
-      color: #004225;
-      font-size: 20px;
-      margin-left: 20px;
-  }
+.form label {
+  font-weight: bold;
+}
 
-  /* Registration Form Page */
-  .form {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-  }
-  
-  .form label {
-    font-weight: bold;
-  }
-  
-  .form p {
-    margin: 0;
-  }
-  
-  .form input,
-  .form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  .form select {
-    height: 40px;
-  }
-  
-  .form .option {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 16px;
-  }
-  
-  .form .option .input-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .form input[type="radio"],
-  .form input[type="checkbox"] {
-    margin: 0;
-  }
-  
-  .form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .form button:hover {
-    background-color: #45a049;
-  }
-  
-  
+.form p {
+  margin: 0;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form select {
+  height: 40px;
+}
+
+.form .option {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.form .option .input-container {
+  display: flex;
+  align-items: center;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"] {
+  margin: 0;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.form button:hover {
+  background-color: #45a049;
+}
