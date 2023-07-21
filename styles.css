@@ -82,7 +82,7 @@ font-size: 22px;
 margin: 20px 10px;
 border-radius: 30px;
 font-weight: medium;
-border: 2px solid #3498DB;
+border: 3px solid #009688;
 background: transparent;
 color: #fff;
 cursor: pointer; 
@@ -90,7 +90,7 @@ position: relative;
 overflow: hidden;
 }
 span{
-background: #3498DB;
+background: #009688;
 height: 100%;
 width: 0%;
 border-radius: 25px;
@@ -440,11 +440,11 @@ padding: 20px;
 }
   /* Registration Form Page */
 
-.registration-background {
+.registration-banner {
   width: 100%;
   height: 100%;
   
-  background-image: linear-gradient(to bottom, rgba(250, 246, 246, 0.835) 90%,rgba(246, 244, 244, 1) 100%), url(https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/DM6TC0-scaled.jpg?v=1689217084220) ;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5) 90%,rgba(255, 255, 255, 1) 100%), url(https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/DM6TC0-scaled.jpg?v=1689217084220) ;
   background-size: cover;
   
   background-position: center;
@@ -509,4 +509,14 @@ padding: 20px;
 
 .form button:hover {
   background-color: #45a049;
+}
+.form-title {
+  text-align: center;
+}
+
+.pages-banner {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(52, 52, 64, 1), rgba(52, 52, 64, 0));
+  position: relative;
 }
