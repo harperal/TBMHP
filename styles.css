@@ -274,7 +274,7 @@ padding-bottom: 100px;
 .header-us {
   display: flex;
   grid-area: header;
-  background-color: #F0EDE5;
+  background-color: #ffffff;
   color: #004225;
   font-size: 3em;
   text-align: center;
@@ -290,17 +290,17 @@ padding-bottom: 100px;
   height: 700px;
   min-height: 500px;
   padding: 20px;
-  color: #F0EDE5;
+  color: #ffffff;
   font-family: helvetica;
   font-size: 24px;
-  background-color: #F0EDE5;
+  background-color: #ffffff;
   text-align: left;
 }
 
 .footer-us {
   grid-area: footer;
-  color: antiquewhite;
-  background-color: #F0EDE5;
+  color: rgb(255, 255, 255);
+  background-color: #ffffff;
   outline:#fff 1rem;
 }
 
@@ -332,7 +332,7 @@ padding-bottom: 100px;
 .header {
   display: flex;
   grid-area: header;
-  background-color: #F0EDE5 ;
+  background-color: #ffffff ;
   color: #004225;
   font-size: 3em;
   text-align: center;
@@ -345,7 +345,7 @@ padding-bottom: 100px;
   color: #004225;
   font-family: helvetica;
   font-size: 24px;
-  background-color: #F0EDE5 ;
+  background-color: #ffffff ;
   text-align: left;
 }
 
@@ -361,7 +361,7 @@ padding-bottom: 100px;
 .footer {
   grid-area: footer;
   color: black;
-  background-color: #F0EDE5 ;
+  background-color: #ffffff ;
 }
 
 
@@ -442,12 +442,10 @@ padding: 20px;
 
 .registration-banner {
   width: 100%;
-  height: 100%;
+  height: 10%;
   
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5) 90%,rgba(255, 255, 255, 1) 100%), url(https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/DM6TC0-scaled.jpg?v=1689217084220) ;
-  background-size: cover;
-  
-  background-position: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5) 90%,rgba(255, 255, 255, 1) 100%), url(https://cdn.glitch.global/ef4b1ae0-549c-4c65-a17b-00627de05476/banner.jpeg?v=1689031159671) ;
+  position: relative;
 }
 .form {
   max-width: 600px;
