@@ -7,12 +7,13 @@
 .banner{
 width: 100%;
 height: 100vh;
-background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5) 90%,rgba(255, 255, 255, 1) 100%), url(https://cdn.glitch.global/ef4b1ae0-549c-4c65-a17b-00627de05476/banner.jpeg?v=1689031159671) ;
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, .1) 80%,rgba(255, 255, 255, 1) 100%), url(https://cdn.glitch.global/9a84ab25-417f-4bbe-b80b-9546255e3531/drew-geraets-NtrxaEdbMXU-unsplash.jpg?v=1690169847059) ;
 background-size: cover;
 
 background-position: center;
 }
 .logo{
+border-radius: 10px;
 width: 100px;
 height: 100px;
 cursor: pointer;
@@ -34,7 +35,7 @@ position: relative;
 }
 .navbar ul li a{
 text-decoration: none;
-color: #fff;
+color: #3498DB;
 font-weight: 400;
 text-transform: uppercase;
 }
@@ -42,7 +43,7 @@ text-transform: uppercase;
 content: "";
 height: 3px;
 width: 0%;
-background: #009688;
+background: #82926E;
 position: absolute;
 left: 0;
 bottom: -10px;
@@ -57,13 +58,13 @@ position: absolute;
 top: 50%;
 transform: translateY(-50%);
 text-align: center;
-color: #fff;
+color: #ffffff;
 }
 .content h1{
 font-size: 80px;
 margin-top: 80px;
 font-weight: 450;
-color: #fff;
+color: #ffffff;
 margin-bottom: 2px;
 }
 .content h2{
@@ -82,15 +83,15 @@ font-size: 22px;
 margin: 20px 10px;
 border-radius: 30px;
 font-weight: medium;
-border: 3px solid #009688;
+border: 2px solid #3498DB;
 background: transparent;
-color: #fff;
+color: #ffffff;
 cursor: pointer; 
 position: relative;
 overflow: hidden;
 }
 span{
-background: #009688;
+background: #3498DB;
 height: 100%;
 width: 0%;
 border-radius: 25px;
@@ -111,14 +112,14 @@ border: none;
 width: 100%;
 position: absolute;
 text-align: center;
-color: #154360 ;
+color: #555555 ;
 margin-bottom: 20px;
 }
 .path h3{
 font-size: 50px;
 margin-top: 60px;
 font-weight: 400;
-color: #154360  ;
+color: #555555  ;
 padding: 0px;
 margin-bottom:10px;
 }
@@ -126,7 +127,7 @@ margin-bottom:10px;
 font-size: 20px;
 margin-top: 70px;
 font-weight: 400;
-color: #154360  ;
+color: #555555  ;
 padding: 0px;
 margin-top:2px;
 margin-bottom: 40px;
@@ -136,13 +137,13 @@ width: 100%;
 margin-top: 90px;
 position: absolute;
 text-align: center;
-color: #154360 ;
+color: #555555 ;
 }
 .mission h5{
 font-size: 40px;
 margin-top: 90px;
 font-weight: 400;
-color: #154360  ;
+color: #555555  ;
 padding: 0px;
 margin-bottom: 5px;
 }
@@ -150,12 +151,52 @@ margin-bottom: 5px;
 font-size: 20px;
 margin-top: 10px;
 font-weight: 350;
-color: #154360  ;
+color: #555555  ;
 padding-left: 60px;
 padding-right: 60px;
 text-align: center;
 padding-bottom: 100px;
 }
+.events-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-gap: 20px;
+  position: relative;
+}
+.events{
+width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+margin-top: 420px;
+position: absolute;
+text-align: right;
+color: #555555 ;
+}
+
+
+
+
+
+.copyright{
+width: 100%;
+padding-left: 60px;
+  padding-right: 60px;
+margin-top: 1200px;
+position: absolute;
+text-align: center;
+color: #555555 ;
+}
+
+.copyright h9{
+font-size: 20px;
+margin-top: 100px;
+font-weight: 350;
+color: #555555  ;
+text-align: center;
+padding-bottom: 10px;
+}
+
 
 /* Mobile Menu */
 .menu {
@@ -301,7 +342,7 @@ padding-bottom: 100px;
   grid-area: footer;
   color: rgb(255, 255, 255);
   background-color: #ffffff;
-  outline:#fff 1rem;
+  outline: #fff 1rem;
 }
 
 #text-us {
@@ -332,7 +373,7 @@ padding-bottom: 100px;
 .header {
   display: flex;
   grid-area: header;
-  background-color: #ffffff ;
+  background-color: white;
   color: #004225;
   font-size: 3em;
   text-align: center;
@@ -345,7 +386,7 @@ padding-bottom: 100px;
   color: #004225;
   font-family: helvetica;
   font-size: 24px;
-  background-color: #ffffff ;
+  background-color: white ;
   text-align: left;
 }
 
@@ -354,14 +395,14 @@ padding-bottom: 100px;
   width: 100%; 
   height: 100%; 
   background: url("https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/tom_daughter_cuddle.jpg?v=1689031424965") center/cover no-repeat;
-  background-color: #F0EDE5 ;
+  background-color: white ;
 }
 
 
 .footer {
   grid-area: footer;
   color: black;
-  background-color: #ffffff ;
+  background-color: white ;
 }
 
 
@@ -440,17 +481,20 @@ padding: 20px;
 }
   /* Registration Form Page */
 
-.registration-banner {
+.registration-background {
   width: 100%;
-  height: 10%;
+  height: 100%;
   
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5) 90%,rgba(255, 255, 255, 1) 100%), url(https://cdn.glitch.global/ef4b1ae0-549c-4c65-a17b-00627de05476/banner.jpeg?v=1689031159671) ;
-  position: relative;
+  background-image: linear-gradient(to bottom, rgba(250, 246, 246, 0.835) 90%,rgba(246, 244, 244, 1) 100%), url(https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/DM6TC0-scaled.jpg?v=1689217084220) ;
+  background-size: cover;
+  
+  background-position: center;
 }
 .form {
   max-width: 600px;
   margin: auto;
-  padding: 20px 40px;
+  padding: 40px 40px;
+  margin-top: 80px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
@@ -497,7 +541,7 @@ padding: 20px;
 .form button {
   width: 100%;
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #3498DB;
   color: white;
   border: none;
   border-radius: 3px;
@@ -506,7 +550,7 @@ padding: 20px;
 }
 
 .form button:hover {
-  background-color: #45a049;
+  background-color: #1e60c2;
 }
 .form-title {
   text-align: center;
@@ -518,3 +562,6 @@ padding: 20px;
   background: linear-gradient(rgba(52, 52, 64, 1), rgba(52, 52, 64, 0));
   position: relative;
 }
+
+
+
