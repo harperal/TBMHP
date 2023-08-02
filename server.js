@@ -2,11 +2,10 @@ const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const app = express();
-const port = 5505; // Replace with the desired port number
+const port = 5505; 
 
 app.use(cors());
 
-// Middleware to parse form data
 app.use(express.urlencoded({ extended: false }));
 
 
@@ -48,7 +47,7 @@ async function sendEmail(to, subject, text) {
   });
 
   const mailOptions = {
-    from: 'harper.2480@gmail.com', // Your email address
+    from: 'harper.2480@gmail.com', 
     to: to,
     subject: subject,
     text: text
