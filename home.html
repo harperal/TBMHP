@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>TBMHP</title>
 </head>
 <body>
-    <div class = "banner">
-      <div class = "navbar">
-        <img src="https://cdn.glitch.global/9a84ab25-417f-4bbe-b80b-9546255e3531/TBMHP-1-3.png?v=1690175109606" class="logo">
+  <div class = "navbar">
+        <img src="https://cdn.glitch.global/091e1d66-b4ac-47ef-92a6-3c85daa85d25/TBMHP-1-5.png?v=1690779813952" class="logo">
         <ul>
             <li><a href="home.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="abouttom.html">About Tom</a></li>
-            <li><a href="board.html">Board</a></li>
+          
+          
+          <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">About &#9662;</a>
+        <div class="dropdown-content">
+          <a href="abouttom.html">About Tom</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="board.html">Board Members</a>
+        </div>
+      </li>
+            <li><a href="register.html">Events</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contactus.html">Contact</a></li>
-            <li><a href="donate.html">Donate</a></li>
+            <li><a href="donate.html" id="donate-link">Donate</a></li>
         </ul>
       </div>
+    <div class = "banner">
       <div class="content">
         <h1>
           Thomas Batterman
@@ -29,11 +37,9 @@
         </h2>
         <div>
           <a href="donate.html">
-            <button type="button"><span></span>DONATE</button>
+            <button class="button"><span></span>DONATE</button>
           </a>
-          <a href="register.html">
-            <button type="button"><span></span>REGISTER</button>
-          </a>
+          
         </div>
       </div>  
     </div>
@@ -64,10 +70,34 @@
     
   <div class="events-container">
   
-    <div class="events">
+    <div class="events-text">
+      <h7>
+        <span class="event-title">Events:</span><b>Run For Wellness</b>
+      </h7>
+      <br>
+      <br />
+      <p>
+        <b>Join us</b> for a run for wellness on September 16th at 9:00 am at the Elkton High School Football Field. 
+        Participants can register for 5k or 10k distances and may walk the 5k distance. T-shirts and a drink 
+        ticket will be provided for all participants. Runners are responsible for clocking their own times. 
+        $30 entry fee for the 5K and $50 for the 10K. Please contact Lori Batterman at <b>541-895-3039</b> 
+        with any questions. Please sign up below.
+      </p>
+      <a href="donate.html">
+            <button class="register-button"><span></span>REGISTER</button>
+          </a>
+    </div>
       <img src="https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/Run4wellness_flyer.png?v=1689217098583" width="550" height="550">
   </div>
-  </div>
+  
+  <div class="resources">
+        <h5>Resources</h5>
+        <p>Lane County Behavioral Health: 541-682-3608</p>
+    <p>Suicide Hotline – Dial 988</p>
+    <p>Klamath County Behavioral Health: 541-882-7291</p>
+    </div>
+
+
     
     <div class="copyright">
     <h9>
@@ -80,7 +110,13 @@
   
     
     
-    <script src="/main.js"></script>   
+    <script src="/script.js"></script> 
+  
+  
+
+ 
+    
    
 </body>
 </html>
+  
