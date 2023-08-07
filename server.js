@@ -28,7 +28,7 @@ app.post('/contactForm', async (req, res) => {
 
   try {
     // Send the confirmation email
-    await sendEmail(email, subject, body);
+    await sendContactEmail(email, subject, body, firstName, lastName, email, message);
 
     // Send a response back to the client
     //res.send('Thank you for contacting us! A confirmation email has been sent to your email address.');
@@ -40,7 +40,7 @@ app.post('/contactForm', async (req, res) => {
 });
 
 // Function to send an email
-async function sendEmail(to, subject, text) {
+async function sendContactEmail(to, subject, text, firstName, lastName, email, message) {
   // Create a transporter using GMAIL SMTP, transporter below is for testing purposes only
   //const transporter = nodemailer.createTransport({
     //service: 'Gmail',  
@@ -58,18 +58,27 @@ async function sendEmail(to, subject, text) {
     }
 });
 
-  const mailOptions = {
+  const mailOptionsToUser = {
     from: process.env.EMAIL_USER, 
     to: to,
     subject: subject,
     text: text,
   };
 
-  // Send the email
-  const info = await transporter.sendMail(mailOptions);
+  const mailOptionsToAdmin = {
+    from: process.env.EMAIL_USER,
+    to: process.env.ADMIN_EMAIL,
+    subject: `New contact us form submission - ${firstName}`,
+    text: `A new contact us form submission has been received:\n\nFirst Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nMessage: ${message}`
+  };
 
-  // Print the URL to view the test email details (ethereal)
-  console.log('Confirmation email sent. Preview URL:', nodemailer.getTestMessageUrl(info));
+  // Send emails to user and admin
+  const userResponse = await transporter.sendMail(mailOptionsToUser);
+  const adminResponse = await transporter.sendMail(mailOptionsToAdmin);
+
+  // Print the URLs to view the test email details (ethereal)
+  console.log('User email sent. Preview URL:', nodemailer.getTestMessageUrl(userResponse));
+  console.log('Admin email sent. Preview URL:', nodemailer.getTestMessageUrl(adminResponse));
 }
 
 app.listen(port, () => {
