@@ -188,6 +188,56 @@ async function sendDonationEmail(to, subject, text, firstName, lastName, email, 
   console.log('Admin email sent. Preview URL:', nodemailer.getTestMessageUrl(adminResponse));
 }
 
+app.post('/subscribeForm', async (req, res) => {
+  //const { email } = req.body;
+  const email = req.body['sub-email'];
+
+  const subject = 'Thank you for subscribing!';
+  const body = `Dear Subscriber,\n\nThank you for subscribing to our newsletter. You'll receive updates and news from us.\n\nBest regards,\nThe TBMHP Team`;
+
+  try {
+    await sendSubscribeEmail(email, subject, body);
+
+    res.redirect('/confirmation/subscription.html');
+  } catch (error) {
+    console.error('Error sending email:', error);
+    res.status(500).send('An error occurred while sending the email.');
+  }
+});
+
+async function sendSubscribeEmail(to, subject, text) {
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.ethereal.email',
+    port: 587,
+    auth: {
+      user: 'dorian.mcclure40@ethereal.email',
+      pass: 'tjfA6vwm8hkvb5XPb3'
+    }
+  });
+
+  const mailOptionsToUser = {
+    from: process.env.EMAIL_USER,
+    to: to,
+    subject: subject,
+    text: text,
+  };
+
+  const mailOptionsToAdmin = {
+    from: process.env.EMAIL_USER,
+    to: process.env.ADMIN_EMAIL, // Set the admin's email address
+    subject: `New subscriber!`,
+    text: `A new subscription form submission has been received:\n\nEmail: ${to}`
+  };
+
+  // Send emails to user and admin
+  const userResponse = await transporter.sendMail(mailOptionsToUser);
+  const adminResponse = await transporter.sendMail(mailOptionsToAdmin);
+
+  // Print the URLs to view the test email details (ethereal)
+  console.log('User email sent. Preview URL:', nodemailer.getTestMessageUrl(userResponse));
+  console.log('Admin email sent. Preview URL:', nodemailer.getTestMessageUrl(adminResponse));
+}
+
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
