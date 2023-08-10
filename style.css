@@ -384,18 +384,11 @@ padding-bottom: 10px;
 
 #text-us {
   width: 80%;
-  background-color: #82926E ;
+  background-color: #3F5275 ;
   opacity: .8;
   padding: 20px;
   font-size: 20px
 }
-
-
-
-
-
-
-
 
 
 /* About Tom Page */
@@ -464,12 +457,6 @@ padding-bottom: 10px;
 }
 
 
-
-
-
-
-
-
 /* Board of Directors */
 
 .directors-container {
@@ -509,7 +496,7 @@ padding: 20px;
     width: 70%;
     margin: 20px;
     padding: 20px;
-    border: 2px solid #82926E;
+    border: 2px solid #3F5275;
     display: flex;
     align-items: center;
 }
@@ -531,32 +518,25 @@ padding: 20px;
   
 .board-member h3 {
   font-size: 24px;
-  color: #555555;
+  color: #3F5275;
   margin-bottom: 10px;
   margin: auto;
   text-align: left;
 }
   
 .board-member p {
-    color: #555555;
+    color: #3F5275;
     font-size: 20px;
     margin-left: 20px;
 }
-
-
-
-
-
 
   /* Registration Form Page */
 
 .registration-background {
   width: 100%;
   height: 100%;
-  
   background-image: linear-gradient(to bottom, rgba(250, 246, 246, 0.835) 90%,rgba(246, 244, 244, 1) 100%), url(https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/DM6TC0-scaled.jpg?v=1689217084220) ;
   background-size: cover;
-  
   background-position: center;
 }
 .form {
@@ -632,11 +612,6 @@ padding: 20px;
   background: linear-gradient(rgba(52, 52, 64, 1), rgba(52, 52, 64, 0));
   position: relative;
 }
-
-
-
-
-
 
 /* GALLERY Page */
 
@@ -749,7 +724,7 @@ padding: 20px;
     height: calc(100% + 40px);
     opacity: .6;
     
-    background-image: url('https://cdn.glitch.global/9a84ab25-417f-4bbe-b80b-9546255e3531/richard-gonzales-r47ZAMQK7vo-unsplash.jpeg?v=1689891412363');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .1) 70%,rgba(255, 255, 255, 1) 100%), url('https://cdn.glitch.global/9a84ab25-417f-4bbe-b80b-9546255e3531/richard-gonzales-r47ZAMQK7vo-unsplash.jpeg?v=1689891412363');
     background-size: cover;
     background-position: center center;
     z-index: -1;
@@ -770,3 +745,123 @@ padding: 20px;
   color: #3F5275; 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.container-footer{
+	max-width: 1500px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col{
+   width: 1/4;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #3498DB;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.form-sub {
+  max-width: 600px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.form-sub input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.form-sub button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498DB;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.form-sub button:hover {
+  background-color: #1e60c2;
+}
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}

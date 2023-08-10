@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Registration</title>
 </head>
 
@@ -35,10 +36,11 @@
       <div>
         <form action="http://localhost:5506/registerForm" method="POST" id="registration-form" class="form">
             <!-- Distance options -->
-            <div><h1 class="form-title">Race Registration</h1></div>
+            <h1 class= "gallerytext">Race Registration</h1>
             <br>
             <div class="distance">
-                <label for="distance">Race Choices:</label>
+                <label for="distance" style="font-weight: 400;
+                color: #3F5275;">Race Choices:</label>
                 <select class="form-select" name="distance" id="distance" aria-label="Default select example">
                     <option selected>Select</option>
                     <option value="walk5k">5K Walk</option>
@@ -51,21 +53,26 @@
             <div class="personal-info">
                 <br>
                 <div class="name-fields">
-                    <label for="first">First Name:</label>
+                    <label for="first" style="font-weight: 400;
+                    color: #3F5275;">First Name:</label>
                     <input type="text" id="first" name="firstname" placeholder="First Name" required>
                     <br>
-                    <label for="last">Last Name:</label>
+                    <label for="last" style="font-weight: 400;
+                    color: #3F5275;">Last Name:</label>
                     <input type="text" id="last" name="lastname" placeholder="Last Name" required>
                 </div>
                 <br>
                 <div class="contact-fields">
-                    <label for="email">Email:</label>
+                    <label for="email" style="font-weight: 400;
+                    color: #3F5275;">Email:</label>
                     <input type="email" name="email" id="email" placeholder="name@example.com" required>
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <label for="phone" style="font-weight: 400;
+                    color: #3F5275;">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 </div>
                 <div class="optional-fields">
-                    <label for="gender">Gender (optional):</label>
+                    <label for="gender" style="font-weight: 400;
+                    color: #3F5275;">Gender (optional):</label>
                     <select name="gender" id="gender">
                         <option value="Select">Select</option>
                         <option value="female">Female</option>
@@ -73,7 +80,8 @@
                         <option value="non-binary">Non-Binary</option>
                     </select>
                     <br>
-                    <label for="age">Age:</label>
+                    <label for="age" style="font-weight: 400;
+                    color: #3F5275;">Age:</label>
                     <input type="number" name="age" id="age">
                 </div>
             </div>
@@ -81,7 +89,8 @@
             <!-- Participation Options -->
             <div class="participation-options">
                 <div class="participation">
-                    <label for="participation">How would you like to register?</label>
+                    <label for="participation" style="font-weight: 400;
+                    color: #3F5275;">How would you like to register?</label>
                     <select class="form-select" aria-label="Default select example" name="participation" id="participation">
                         <option selected>Select</option>
                         <option value="volunteer">Volunteer</option>
@@ -98,17 +107,66 @@
     </div>
 </body>
 <footer>
+    <!-- Email Subscription -->
     <div>
       <form action="http://localhost:5506/subscribeForm" method="POST" id="subscribe-form" class="form">
           <div>
-            <h1 class="form-title">Subscribe to Our Newsletter</h1>
+            <h1 class= "gallerytext">Subscribe to Our Newsletter</h1>
           </div>
-          <!-- Email Information -->
               <div class="contact-fields">
                   <input type="email" name="sub-email" placeholder="email@example.com" required>
               </div>
           <button type="submit" id="subscribe-button">Subscribe</button>
       </form>
     </div>
-  </footer>
+</footer>
+<footer class="footer">
+    <div class="container-footer">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Stay up to date on our latest news!</h4>
+          <div class="subscription">
+            <form action="http://localhost:5506/subscribeForm" method="POST" class="form-sub">
+              <div>
+                <h1 class="gallerytext">Subscribe to our Newsletter</h1>
+            </div>
+                <div class="contact-fields">
+                    <input type="email" name="sub-email" placeholder="email@example.com" required>
+                </div>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#"><b>Lane County Behavioral Health: 541-682-3608</b></a></li>
+            <li><a href="#"><b>Suicide Hotline: Dial 988</b></a></li>
+            <li><a href="#"><b>Klamath County Behavioral Health: 541-882-7291</b></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Additional Links</h4>
+          <!-- Add more links as needed -->
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="termsandconditions.html">Terms and Conditions</a></li>
+            <li><a href="privacystatement.html">Privacy Statement(US)</a></li>
+            <li><a href="imprint.html">Imprint</a></li>
+            <li><a href="opt-outpreferences.html">Opt-out Preferences</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> 
 </html>

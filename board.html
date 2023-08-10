@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <title>Board of Directors</title>
 </head>
 
@@ -32,8 +33,8 @@
   <div class="directors-container">
     <div class="board-container">
       <div class="mission-container">
-        <h3 style="color: #555555">
-          <b style="color: #555555; font-size: 36px">Meet Our Amazing Team</b>
+        <h3 style="color: #3F5275">
+          <b style="color: #3F5275; font-size: 36px">Meet Our Amazing Team</b>
           <br><br>
           Our team is a mix of Tom’s family and friends that are committed to the success of TBMHP and the
           mission that we strive to obtain.
@@ -45,7 +46,7 @@
             src="https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/Head-shot-e1686334484664.png?v=1689098456002"
             alt="Lori Batterman Profile Picture">
           <div class="member-info">
-            <h3 style="color:#555555; font-size: 36px"><b>Lori Batterman</b></h3>
+            <h3 style="color:#3F5275; font-size: 36px"><b>Lori Batterman</b></h3>
             <br>
             <h3>President</h3>
             <br>
@@ -65,7 +66,7 @@
             src="https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/IMG20230604163744-2-e1686334435698.jpg?v=1689098494665"
             alt="Jessica Batterman Profile Picture">
           <div class="member-info">
-            <h3 style="color:#555555; font-size: 36px"><b>Jessic Batterman</b></h3>
+            <h3 style="color:#3F5275; font-size: 36px"><b>Jessic Batterman</b></h3>
             <br>
             <h3>Secretary</h3>
             <br>
@@ -89,7 +90,7 @@
             src="https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/Casey-Scofield-1L-Headshot-e1686334574585.jpg?v=1689098435835"
             alt="Casey Scofield Profile Picture">
           <div class="member-info">
-            <h3 style="color:#555555; font-size: 36px"><b>Casey Scofield</b></h3>
+            <h3 style="color:#3F5275; font-size: 36px"><b>Casey Scofield</b></h3>
             <br>
             <h3>Vice President</h3>
             <br>
@@ -112,7 +113,7 @@
           <img src="https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/Hillel.jpg?v=1689098465437"
             alt="Hillel Profile Picture">
           <div class="member-info">
-            <h3 style="color:#555555; font-size: 36px"><b>Hillel Hoffman</b></h3><br>
+            <h3 style="color:#3F5275; font-size: 36px"><b>Hillel Hoffman</b></h3><br>
             <h3>Board Member</h3><br>
             <p>After working for more than three decades in journalism and higher education, Hillel opened up an
               independent communications
@@ -127,7 +128,7 @@
             src="https://cdn.glitch.global/e5d46084-d8b1-4d2b-a8c7-b784045bbe96/Richard-Kiely-e1687718264974.jpg?v=1689098446660"
             alt="Richard Kiely Profile Picture">
           <div class="member-info">
-            <h3 style="color:#555555; font-size: 36px"><b>Richard Kiely</b></h3><br>
+            <h3 style="color:#3F5275; font-size: 36px"><b>Richard Kiely</b></h3><br>
             <h3>Board Member</h3><br>
             <p>Richard Kiely is the associate vice provost for engagement and land-grant affairs and the director of
               academic initiatives in
@@ -141,7 +142,7 @@
         </div>
         <div class="board-member">
           <div class="member-info">
-            <h3 style="color:#555555; font-size: 36px"><b>Sandra Galli</b></h3><br>
+            <h3 style="color:#3F5275; font-size: 36px"><b>Sandra Galli</b></h3><br>
             <h3>Board Member</h3><br>
             <p>
               Sandra Galli lives in Elkton, Oregon. Elkton is a small, historic town, overlooking the beautiful Umpqua
@@ -169,18 +170,60 @@
   </div>
   <script src="/script.js"></script>
 </body>
-<footer> 
-    <!-- Email Subscription -->
-    <div>
-      <form action="http://localhost:5506/subscribeForm" method="POST" id="subscribe-form" class="form">
-          <div>
-            <h1 class="form-title">Subscribe to Our Newsletter</h1>
+<footer class="footer">
+  <div class="container-footer">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Stay up to date on our latest news!</h4>
+        <div class="subscription">
+          <form action="http://localhost:5506/subscribeForm" method="POST" class="form-sub">
+            <div>
+              <h1 class="gallerytext">Subscribe to our Newsletter</h1>
           </div>
               <div class="contact-fields">
                   <input type="email" name="sub-email" placeholder="email@example.com" required>
               </div>
-          <button type="submit" id="subscribe-button">Subscribe</button>
-      </form>
+              <button type="submit">Subscribe</button>
+          </form>
+      </div>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#"><b>Lane County Behavioral Health: 541-682-3608</b></a></li>
+          <li><a href="#"><b>Suicide Hotline: Dial 988</b></a></li>
+          <li><a href="#"><b>Klamath County Behavioral Health: 541-882-7291</b></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Additional Links</h4>
+        <!-- Add more links as needed -->
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="termsandconditions.html">Terms and Conditions</a></li>
+          <li><a href="privacystatement.html">Privacy Statement(US)</a></li>
+          <li><a href="imprint.html">Imprint</a></li>
+          <li><a href="opt-outpreferences.html">Opt-out Preferences</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
     </div>
-</footer>
+  </div>
+</footer> 
+<div class="copyright">
+  <h9>
+    <hr>
+    <br>
+    © 2023 Thomas Batterman Mental Health Project
+  </h9>
+</div>
 </html>
