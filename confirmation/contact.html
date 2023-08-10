@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Contact Us Confirmation</title>
   </head>
   <body>
@@ -32,16 +27,67 @@
         <li><a href="../donate.html" id="donate-link">Donate</a></li>
       </ul>
     </div>
-    <form action="http://localhost:5505/contactForm" method="POST" id="contact-us" class="form">
-        <h3>Thank You for Contacting Us!</h3>
-        <p>A confirmation email has been sent to your email address. We will get back to you soon.</p>
+    <form action="http://localhost:5505/contactForm" method="POST" id="contact-us" class="form" style="margin-bottom: 300px;">
+        <h3 style="padding-bottom: 40px;">Thank You for Contacting Us!</h3>
+        <p style="padding-left: 20px; padding-right: 20px;">A confirmation email has been sent to your email address. We will get back to you soon.</p>
     </form>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
     <script src="/script.js"></script>
     </body>
+    <footer class="footer">
+        <div class="container-footer">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Stay up to date on our latest news!</h4>
+              <div class="subscription">
+                <form action="http://localhost:5506/subscribeForm" method="POST" class="form-sub">
+                  <div>
+                    <h1 class="gallerytext">Subscribe to our Newsletter</h1>
+                </div>
+                    <div class="contact-fields">
+                        <input type="email" name="sub-email" placeholder="email@example.com" required>
+                    </div>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            </div>
+            <div class="footer-col">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#"><b>Lane County Behavioral Health: 541-682-3608</b></a></li>
+                <li><a href="#"><b>Suicide Hotline: Dial 988</b></a></li>
+                <li><a href="#"><b>Klamath County Behavioral Health: 541-882-7291</b></a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Additional Links</h4>
+              <!-- Add more links as needed -->
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="termsandconditions.html">Terms and Conditions</a></li>
+                <li><a href="privacystatement.html">Privacy Statement(US)</a></li>
+                <li><a href="imprint.html">Imprint</a></li>
+                <li><a href="opt-outpreferences.html">Opt-out Preferences</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer> 
+        <div class="copyright">
+          <h9>
+            <hr>
+            <br>
+            © 2023 Thomas Batterman Mental Health Project
+          </h9>
+        </div>   
 </html>
 
