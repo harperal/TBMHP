@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
     <title>Donation</title>
 </head>
 <body>
@@ -36,12 +36,17 @@
         <form action="http://localhost:5506/donateForm" method="POST" id="donate" class="form">
         <h3>Donate</h3>
         <br>
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" name="firstName" placeholder="First name" aria-label="First name">
+            <div>
+              <div class="col-12">
+                <label for="firstName" class="form-label" style="font-weight: 400;
+                color: #3F5275;">First Name</label>
+                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name" aria-label="First name">
             </div>
-            <div class="col">
-                <input type="text" class="form-control" name="lastName" placeholder="Last name" aria-label="Last name">
+            <div>
+              <div class="col-12">
+                <label for="lastName" class="form-label" style="font-weight: 400;
+                color: #3F5275;">Last Name</label>
+                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last name" aria-label="First name">
             </div>
             </div>
                 <div class="mb-3">
@@ -129,25 +134,11 @@
             <div class="mb-3">
                 <button class="btn btn-primary" type="submit">PayPal </button>
             </div>
-    </form>
-  </div>
-    <script src="/script.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
-<footer>
-  <!-- Email Subscription -->
-  <div>
-    <form action="http://localhost:5506/subscribeForm" method="POST" id="subscribe-form" class="form">
-        <div>
-          <h1 class= "gallerytext">Subscribe to Our Newsletter</h1>
-        </div>
-            <div class="contact-fields">
-                <input type="email" name="sub-email" placeholder="email@example.com" required>
             </div>
-        <button type="submit" id="subscribe-button">Subscribe</button>
     </form>
-  </div>
-</footer>
+    </div>
+    <script src="/script.js"></script> 
+</body>
 <footer class="footer">
   <div class="container-footer">
     <div class="row">
@@ -197,4 +188,11 @@
     </div>
   </div>
 </footer> 
+<div class="copyright">
+  <h9>
+    <hr>
+    <br>
+    © 2023 Thomas Batterman Mental Health Project
+  </h9>
+</div>
 </html>
