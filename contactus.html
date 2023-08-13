@@ -30,6 +30,8 @@
     <!-- End of Navbar -->
     <div class="background-container">
       <div class="background-image"></div>
+    <!--Contact Us Form-->
+    <!--Form action includes the localhost for production purposes, can be removed for just "/contactForm" when deployment occurs-->
     <form action="http://localhost:5506/contactForm" method="POST" id="contact-us" class="form">
       <h3>Contact Us</h3>
       <br>
@@ -40,52 +42,19 @@
       <br />
       <div class="row">
         <div class="col">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="First name"
-            aria-label="First name"
-            name="form-first-name"
-            required
-          />
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="form-first-name" required/>
         </div>
         <div class="col">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Last name"
-            aria-label="Last name"
-            name="form-last-name"
-            required
-          />
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="form-last-name" required/>
         </div>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label" style="font-weight: 400;
-        color: #3F5275;"
-          >Email address</label
-        >
-        <input
-          type="email"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="name@example.com"
-          name="form-email"
-          required
-        />
+        <label for="exampleFormControlInput1" class="form-label" style="font-weight: 400; color: #3F5275;">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="form-email" required/>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: 400;
-        color: #3F5275;"
-          >Message</label
-        >
-        <textarea
-          class="form-control"
-          id="exampleFormControlTextarea1"
-          rows="3"
-          name="form-message"
-          required
-        ></textarea>
+        <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: 400; color: #3F5275;">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="form-message" required></textarea>
       </div>
       <div class="mb-3">
         <button class="btn btn-primary" type="submit" id="submit-btn">Submit form</button>
@@ -94,12 +63,15 @@
     </div>
     <script src="/script.js"></script>
   </body>
+  <!--Footer Content-->
   <footer class="footer">
     <div class="container-footer">
       <div class="row">
         <div class="footer-col">
           <h4>Stay up to date on our latest news!</h4>
           <div class="subscription">
+          <!--Subscription Form-->
+          <!--Form action includes the localhost for production purposes, can be removed for just "/subscribeForm" when deployment occurs-->
             <form action="http://localhost:5506/subscribeForm" method="POST" class="form-sub">
               <div>
                 <h1 class="gallerytext">Subscribe to our Newsletter</h1>
@@ -131,13 +103,13 @@
             <li><a href="contactus.html">Contact Us</a></li>
           </ul>
         </div>
+        <!--Social Media Links-->
         <div class="footer-col">
           <h4>follow us</h4>
           <div class="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>

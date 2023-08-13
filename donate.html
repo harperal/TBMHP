@@ -33,42 +33,51 @@
       <!--- Start of Main Content-->
       <div class="background-container">
         <div class="background-image"></div>
+        <!--Donation Form-->
+        <!--Form action includes the localhost for production purposes, can be removed for just "/donateForm" when deployment occurs-->
         <form action="http://localhost:5506/donateForm" method="POST" id="donate" class="form">
         <h3>Donate</h3>
         <br>
+            <!--First Name-->
             <div>
               <div class="col-12">
                 <label for="firstName" class="form-label" style="font-weight: 400;
                 color: #3F5275;">First Name</label>
                 <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name" aria-label="First name">
             </div>
+            <!--Last Name-->
             <div>
               <div class="col-12">
                 <label for="lastName" class="form-label" style="font-weight: 400;
                 color: #3F5275;">Last Name</label>
                 <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last name" aria-label="First name">
             </div>
+            <!--Email-->
             </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label" style="font-weight: 400;
                     color: #3F5275;">Email address</label>
                     <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
+            <!--Address 1-->
             <div class="col-12">
                 <label for="inputAddress" class="form-label" style="font-weight: 400;
                 color: #3F5275;">Address</label>
                 <input type="text" class="form-control" name="address1" id="inputAddress" placeholder="1234 Main St">
               </div>
+              <!--Address 2-->
               <div class="col-12">
                 <label for="inputAddress2" class="form-label" style="font-weight: 400;
                 color: #3F5275;">Address 2</label>
                 <input type="text" class="form-control" name="address2" id="inputAddress2" placeholder="Apartment, studio, or floor">
               </div>
+              <!--City-->
               <div class="col-md-6">
                 <label for="inputCity" class="form-label" style="font-weight: 400;
                 color: #3F5275;">City</label>
                 <input type="text" class="form-control" name="city" id="inputCity">
               </div>
+              <!--State-->
               <div class="col-md-4">
                 <label for="inputState" class="form-label" style="font-weight: 400;
                 color: #3F5275;">State</label>
@@ -126,11 +135,13 @@
                   <option value="WY">WY</option>
                 </select>
               </div>
+              <!--Zip Code-->
               <div class="col-md-2">
                 <label for="inputZip" class="form-label" style="font-weight: 400;
                 color: #3F5275;">Zip</label>
                 <input type="text" class="form-control" name="zip" id="inputZip">
               </div>
+            <!--Submit Donate Form; paypal button has not been integrated here but is just a placeholder-->
             <div class="mb-3">
                 <button class="btn btn-primary" type="submit">PayPal </button>
             </div>
@@ -139,12 +150,15 @@
     </div>
     <script src="/script.js"></script> 
 </body>
+<!--Footer Content-->
 <footer class="footer">
   <div class="container-footer">
     <div class="row">
       <div class="footer-col">
         <h4>Stay up to date on our latest news!</h4>
         <div class="subscription">
+          <!--Subscription Form-->
+          <!--Form action includes the localhost for production purposes, can be removed for just "/subscribeForm" when deployment occurs-->
           <form action="http://localhost:5506/subscribeForm" method="POST" class="form-sub">
             <div>
               <h1 class="gallerytext">Subscribe to our Newsletter</h1>
@@ -176,13 +190,13 @@
           <li><a href="contactus.html">Contact Us</a></li>
         </ul>
       </div>
+      <!--Social Media Link Outs-->
       <div class="footer-col">
         <h4>follow us</h4>
         <div class="social-links">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
     </div>
