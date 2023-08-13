@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const dotenv = require('dotenv');  // Import the dotenv package
@@ -12,7 +13,11 @@ const port = process.env.PORT || 5506;
 app.use(cors({ origin: '*' })); // Allow requests from any origin during development
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/home', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'home.html'));
+});
 
 // Handle Contact Us form submission
 app.post('/contactForm', async (req, res) => {
