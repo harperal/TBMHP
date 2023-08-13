@@ -558,12 +558,17 @@ padding: 20px;
 }
 
 .form input,
+.form textarea,
 .form select {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 20px;
+}
+
+.row .col {
+  width: 50%;
 }
 
 .form select {
